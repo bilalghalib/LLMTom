@@ -165,8 +165,9 @@ export const TEST_SUITES: TestSuite[] = [
 export const BENCHMARK_SCORES: Record<string, number> = {
   "gpt-4": 89,
   "gpt-3.5-turbo": 72,
-  "claude-3-opus": 91,
-  "claude-3-sonnet": 85,
+  "claude-3-5-sonnet-20241022": 93,
+  "claude-3-opus-20240229": 91,
+  "claude-3-sonnet-20240229": 85,
   "llama-3-70b": 68,
   "llama-3-8b": 54,
   "gemini-pro": 81,

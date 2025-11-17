@@ -409,7 +409,7 @@ This shouldn't happen in dev mode, but if you see CORS errors:
 1. Get API key from https://console.anthropic.com
 2. Navigate to http://localhost:3000/dashboard
 3. Provider: Anthropic
-4. Model: claude-3-opus or claude-3-sonnet
+4. Model: claude-3-5-sonnet-20241022, claude-3-opus-20240229, or claude-3-sonnet-20240229
 5. API Key: Paste your key
 6. Run tests!
 

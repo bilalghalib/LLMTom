@@ -137,8 +137,9 @@ export default function Dashboard() {
                       onChange={(e) => setModel(e.target.value)}
                       className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-600 focus:border-transparent"
                     >
-                      <option value="claude-3-opus">Claude 3 Opus</option>
-                      <option value="claude-3-sonnet">Claude 3 Sonnet</option>
+                      <option value="claude-3-5-sonnet-20241022">Claude 3.5 Sonnet</option>
+                      <option value="claude-3-opus-20240229">Claude 3 Opus</option>
+                      <option value="claude-3-sonnet-20240229">Claude 3 Sonnet</option>
                     </select>
                   ) : (
                     <input
