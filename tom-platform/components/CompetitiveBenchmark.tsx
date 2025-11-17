@@ -96,7 +96,7 @@ export default function CompetitiveBenchmark({
         <p className="text-xs text-indigo-700 mt-1">
           {yourScore >= BENCHMARK_SCORES["gpt-4"]
             ? "Excellent! You're outperforming GPT-4"
-            : yourScore >= BENCHMARK_SCORES["claude-3-sonnet"]
+            : yourScore >= BENCHMARK_SCORES["claude-3-sonnet-20240229"]
             ? "Good performance, competitive with leading models"
             : "Consider fine-tuning or prompt engineering to improve"}
         </p>
