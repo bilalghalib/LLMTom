@@ -8,7 +8,10 @@
     "start": "next start",
     "lint": "eslint",
     "export": "next build && echo 'Static site exported to out/ directory'",
-    "serve:static": "npx serve@latest out"
+    "serve:static": "npx serve@latest out",
+    "test": "node ../tests/e2e-tests.js",
+    "test:dev": "concurrently \"npm run dev\" \"wait-on http://localhost:3000 && npm test\"",
+    "test:report": "npm test && open ../test-reports/test-report.html"
   },
   "dependencies": {
     "@radix-ui/react-dialog": "^1.1.15",
@@ -25,12 +28,15 @@
     "zod": "^4.1.12"
   },
   "devDependencies": {
+    "@axe-core/puppeteer": "^4.11.0",
     "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "16.0.3",
+    "playwright": "^1.56.1",
+    "puppeteer": "^24.31.0",
     "tailwindcss": "^4",
     "typescript": "^5"
   }
